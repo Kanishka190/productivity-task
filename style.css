@@ -49,6 +49,14 @@ body {
     color: #0078d4;
   }
 
+ .sidebar .active i{
+    position: absolute;
+    left: 150px;
+    top: 35px;
+  }
+  .sidebar .active i:hover{
+    color: #5cd400;
+  } 
 
   .main-content {
     flex: 1;
