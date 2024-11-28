@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Sheet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <aside class="sidebar">
+            <!-- <h2 class="menu-title">User Name</h2> -->
+            <ul>
+                <li class="active">Dashboard <i class="fa-solid fa-bars"></i></li>
+                <li>Task</li>
+                <li>Manage Task</li>
+                <li>Revenue</li>
+            </ul>
+            <h2 class="menu-title">More</h2>
+            <ul>
+                <li>People</li>
+                <li>Settings</li>
+                <li>Accounts</li>
+                <li>Help</li>
+            </ul>
+        </aside>
+
+
+        <main class="main-content">
+
+            <header class="top-bar">
+                <div class="search-bar-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search" class="search-bar">
+                </div>
+            </header>
+
+
+
+            <section class="dashboard">
+                <h1>Dashboard</h1>
+
+                <div class="row">
+
+                    <div class="card tasks">
+                        <h3>Tasks</h3>
+                        <a href="https://example.com/task1" target="_blank" class="task-item1"
+                            style="text-decoration: none; color: inherit;">Task 1</a>
+                        <a href="https://example.com/task2" target="_blank" class="task-item2"
+                            style="text-decoration: none; color: inherit;">Task 2</a>
+                        <a href="https://example.com/task3" target="_blank" class="task-item3"
+                            style="text-decoration: none; color: inherit;">Task 3</a>
+                    </div>
+
+
+                    <div class="card daily-revenue">
+                        <h3>Daily Revenue</h3>
+                        <canvas id="revenue-chart" width="300" height="200"></canvas>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card">
+                        <h3>Pending</h3>
+                        <canvas id="pending-chart" width="300" height="200"></canvas>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
